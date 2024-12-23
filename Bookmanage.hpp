@@ -1,0 +1,6 @@
+#ifndef STORAGE_BOOKMANAGE_HPP
+#define STORAGE_BOOKMANAGE_HPP
+
+void BookManage();
+
+#endif //STORAGE_BOOKMANAGE_HPP
