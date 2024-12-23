@@ -16,9 +16,7 @@ void savetofile() {//保存到文件
         return;
     }
 
-    outfile << std::to_string(sales) << std::endl;
-
-   - for (int i = 0; i < 1000; ++i) {//将各组成员变量以字符串形式写入文件
+    for (int i = 0; i < 1000; ++i) {//将各组成员变量以字符串形式写入文件
         outfile << Book[i].toString() << std::endl;
     }
 
@@ -30,9 +28,6 @@ int loadfromfie() {//从文件读入
 
     int count = 0;//书籍种类数
     std::string line;
-
-    std::getline(inFile, line);
-    sales = std::stod(line);
 
     while (std::getline(inFile, line)) {//将各行字符串解析
         Book[count].fromString(line);
